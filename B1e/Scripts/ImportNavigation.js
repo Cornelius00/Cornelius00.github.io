@@ -12,6 +12,6 @@ function ImportNavigation () {
           document.body.insertBefore(navigation, document.body.firstChild);
       }
   }
-  xmlhttp.open("GET", "../Standard Elements/Navigation.html", true);
+  xmlhttp.open("GET", "/B1e/Standard Elements/Navigation.html", true);
   xmlhttp.send();
 }
