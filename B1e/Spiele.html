@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="Scripts/ImportNavigation.js"></script>
+  <link href="Stylesheets/MainStylesheet.css" rel="stylesheet">
+  <title>B1e | Spiele</title>
+</head>
+
+<body onload="ChangeGame('BombIt 7')">
+  <main>
+    <h1>Spiele</h1>
+
+    <div id="gameLinks">
+      <a href="javascript:void(0);" onclick="ChangeGame('BombIt 7');">BombIt 7</a>
+      <a href="javascript:void(0);" onclick="ChangeGame('BTD 5');">BTD 5</a>
+      <a href="javascript:void(0);" onclick="ChangeGame('Electricman 2');">Electricman 2</a>
+      <a href="javascript:void(0);" onclick="ChangeGame('Escaping the Prison');">Escaping the Prison</a>
+      <a href="javascript:void(0);" onclick="ChangeGame('My Dear Boss');">My "Dear" Boss</a>
+      <a href="javascript:void(0);" onclick="ChangeGame('Raft Wars');">Raft Wars</a>
+      <a href="javascript:void(0);" onclick="ChangeGame('Raft Wars 2');">Raft Wars 2</a>
+      <a href="javascript:void(0);" onclick="ChangeGame('The Worlds Hardest Game v1');">The Worlds Hardest Game v1</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <object type="application/x-shockwave-flash" data="filepath" style="width: 1200px; height: 675px;">
+    </object>
+
+    <script type="text/javascript">
+      function ChangeGame (gameName) {
+        var filepath = 'Flash Games/' + gameName + '.swf';
+        document.getElementsByTagName('object')[0].data = filepath;
+      }
+    </script>
+  </main>
+</body>
+
+</html>

@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 html {
+  animation: fadein ease 2s;
   height: 100%;
 }
 
 body {
   height: 100%;
-  background-color: #b8ffb5;
+  background-color: rgb(195, 195, 191);
   font-family: Roboto;
   background-image: url('/B1e/Images/Background/Vector Waves.png');
   background-size: cover;
@@ -14,10 +17,59 @@ body {
 }
 
 main {
-  margin-left: 200px;
+  margin-left: 250px;
 }
 
 h1 {
+  font-weight: normal;
   text-align: center;
   font-size: 40px;
+}
+
+#welcomeText {
+  text-align: center;
+  color: rgb(117, 117, 117);
+  font-size: 20px;
+}
+
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#calendar {
+  background-color: white;
+  border: solid black 1px;
+  padding: 10px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+#calendar tr td {
+  border-top: solid black 1px;
+  margin: 0px;
+  padding-right: 60px;
+}
+
+#gameLinks a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-right: 1.1px;
+  padding: 2px;
+  background-color: white;
+  height: 40px;
+  float: left;
+  display: block;
+  width: calc(95% / 8);
+  transition: all ease 1s;
+}
+
+#gameLinks a:hover {
+  color: white;
+  background-color: black;
 }
